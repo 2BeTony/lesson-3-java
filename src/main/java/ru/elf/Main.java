@@ -22,7 +22,7 @@ public class Main {
         System.out.println(PonchCat.name);
         System.out.println(PonchCat.age);
         PonchCat.say(); //метод say наследовался от супер-класса Cats
-//        PonchCat.wool = "шикарной пушистости";
+        PonchCat.wool = "шикарной пушистости";
         PonchCat.sayWool();
 
 
