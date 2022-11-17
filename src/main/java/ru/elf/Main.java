@@ -17,8 +17,10 @@ public class Main {
 
         PonchCat.name = "Пончик";
         PonchCat.age = 5;
+        PonchCat.weight = 4;
 
         PonchCat.sleepOnBed(); //наши объект(кота) и вызвали метод
+        PonchCat.sleepOnBed().sleepOnBed().sleepOnBed(); // может вызвать много раз т.к. return
         System.out.println(PonchCat.name);
         System.out.println(PonchCat.age);
         PonchCat.say(); //метод say наследовался от супер-класса Cats
@@ -36,6 +38,9 @@ public class Main {
         System.out.println(WildCats.name);
         System.out.println(WildCats.age);
         WildCats.sayWool();
+
+        int PonchWeight = PonchCat.getWeight();
+        System.out.println(PonchWeight + 3 );
 
     }
 }
